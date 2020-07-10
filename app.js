@@ -243,3 +243,235 @@
 
 // Q # 2
 
+// var date=new Date();
+// var string=date.toString();
+// var month=string.slice(4,7);
+// document.write(month);
+
+// Q # 3
+
+// var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var date=new Date();
+// var theDay=date.getDay();
+// var today=dayNames[theDay];
+// document.write("Today is " + today);
+
+// Q # 4
+
+// var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+//  var now = new Date();
+//  var theDay = now.getDay();
+// var nameOfToday = dayNames[theDay];
+//   if (nameOfToday=="Sat"|| nameOfToday=="Sun")
+//   {
+//       document.write("It's Fun day");
+//   }
+//   else{
+//       document.write("Working Day")
+//   }
+
+// Q # 5
+
+// var now = new Date();
+//  var theDay = now.getDate();
+//  if (theDay<=15 ){
+//  document.write("First 15 days")
+//  }
+//  else{
+//     document.write("Last 15 days")
+//  }
+
+// Q # 6
+
+// var currentDate=new Date();
+// document.write("Current Date: " + currentDate + "<br>");
+// var miliSeconds=currentDate.getTime();
+// document.write("Elpsed miliseconds since January 1, 1970: " + miliSeconds + "<br>");
+// var minutes=miliSeconds/(1000*60*60);
+// document.write("Elpsed minutes since January 1, 1970: " + minutes);
+
+
+// Q # 7
+
+// var d= new Date()
+// var c= d.getHours()
+// if (c<12 ){
+//     document.write("It's AM")
+//     }
+//     else{
+//        document.write("It's PM")
+//     }
+
+// Q # 8
+
+  
+// var d = new Date("May 31 , 2020");
+// document.write("Later Date: " + d);
+
+// Q # 9
+
+// var g= new Date("June 18 , 2015");
+// var o=g.getTime();
+// var t=new Date();
+// var u=t.getTime();
+// var f=u-o;
+// var b=f/(1000*60*60*24);
+// document.write(b+"  days are passed since 1st ramadan 2015");
+
+// Q # 10
+
+// var e= new Date("Dec 05 , 2015");
+// document.write("Reference Date: " + e);
+// var t=e.getTime();
+// var o=new Date("Jan 01, 2015");
+// var p=o.getTime();
+// var w=t-p;
+// var diff=w/1000;
+// document.write("<br>"+ diff + " seconds had passed since beginning  of 2015");
+
+
+// Q # 11
+
+// var e = new Date();;;
+// document.write("Current Date: " + e);
+// e.setHours(e.getHours() - 1);
+// document.write("<br>" +  "1 hour ago, it was "+e);
+
+// Q # 12
+
+// var e = new Date();;;
+//  document.write("Current Date: " + e);
+//  e.setFullYear(e.getFullYear() - 100);
+//  document.write("<br>" +  "100 years back, it was "+e);
+
+// Q # 13
+
+// var yourAge=prompt("Enter your Age","19");
+// var newDate=new Date();
+// var year=newDate.getFullYear()-yourAge;
+// document.write("Your age is " + yourAge);
+// document.write("<br>" + "Your birth year is " + year);
+
+
+
+// Q # 14
+
+
+// document.write("<h1>" + "K-Electric Bill" + "</h1>");
+// document.write("Customer Name: " +  "<b>" + " ABC Customer " + "</b>" + "<br>");
+// var months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+// var now=new Date();
+// var nowMonth=now.getMonth();
+// var monthName=months[nowMonth];
+// document.write("Month : " +  "<b>" + monthName + "</b>" + "<br>");
+// var units=410;
+// var charges=16;
+// var latPayment=350;
+// var bill=units*charges;
+// var afterdueDate=bill+latPayment;
+// document.write("Number of units: " +  "<b>" + units + "</b>" + "<br>");
+// document.write("Charges per unit : " +  "<b>" +  charges + "</b>" + "<br><br>");
+// document.write("Net Amount payable (within Due Date): " +  "<b>" + bill + "</b>" + "<br>");
+// document.write("Late Payment surcharge: " +  "<b>" + latPayment + "</b>" + "<br>");
+// document.write("Gross Amount payable (after Due Date): " +  "<b>" + afterdueDate + "</b>" + "<br>");
+
+// Chapter 35 to 438
+
+// Q # 1
+
+
+// function telltime(){
+//     var a= new Date()
+//     document.write(a)
+// }
+// telltime();
+
+// Q # 2
+
+// function greet(){
+//     var a=window.prompt("enter your first name: ")
+//     var b= window.prompt("enter your second name: ")
+//     var c = a.toUpperCase()
+//     var d= b.toUpperCase()
+//     document.write("Welcome " +c + " "  +d + " to JS Land")
+
+// }
+// greet();
+
+// Q # 3
+
+// function add(num1,num2){
+//     return num1+num2;
+// }
+// var num1=+prompt("Enter Fisr Number");
+// var num2=+prompt("Enter Second Number");
+// var g=add(num1,num2);
+// alert(g);
+
+// Q # 4
+
+//  function calc(num1,opr,num2){
+//      if(opr=="+"){
+//          return num1 + num2;
+//      }
+//      else if(opr=="-"){
+//          return num1-num2;
+//      }
+//      else if(opr=="*"){
+//          return num1*num2;
+//      }
+//      else if(opr=="/"){
+//          return num1/num2;
+//      }
+//      else if(opr=="%"){
+//          return num1%num2;
+//      }
+//      else{
+//          alert("Invalid Choice")
+//      }
+//  }
+//  var num1=+prompt("Enter Fisr Number");
+//  var opr=prompt("Enter Operator");
+//  var num2=+prompt("Enter Second Number");
+//  var g=calc(num1,opr,num2);
+//  alert(g);
+
+// Q # 5
+
+// function sqr(a){
+//     return a*a;
+// }
+// var t=prompt("Enter Number");
+// var square=sqr(t);
+// alert(square);
+
+// Q # 6
+
+
+// function factorialize(num) {
+//     if (num === 0 || num === 1)
+//       return 1;
+//     for (var i = num - 1; i >= 1; i--) {
+//       num *= i;
+//     }
+//     return num;
+//   }
+//   var t=prompt("Please Enter Number");
+//  var g= factorialize(t);
+// alert(g);
+
+// Q # 7
+
+// function counting(){
+//     var first=+prompt("Please Enter First Number");
+//     var end=+prompt("Please Enter Last Number");
+//     for(i=first; i<=end; i++){
+//         document.write(i + "<br>")
+//     }
+// }
+// counting();
+
+
+// Q # 8
+
+
