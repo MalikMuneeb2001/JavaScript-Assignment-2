@@ -474,4 +474,86 @@
 
 // Q # 8
 
+// function hyp(a,b){
+//     return a*a+b*b;
+//     } 
+// var base=+prompt("Enter Base");
+// var per=+prompt("Enter perpindicular");
+// var r=hyp(base,per);
+// alert(r);
+
+// Q # 9
+
+// function area(width,height){
+//      return width*height;
+//      } 
+//  var width=+prompt("Enter Width");
+//  var height=+prompt("Enter Height");
+//  var r=area(width,height);
+//  alert(r);
+
+// Q # 10
+// function pal(){
+//     var word=prompt("Enter Word");
+//     var check="";
+//      for(var i=word.length-1; i>=0; i--){
+//         check +=word[i]
+        
+//      }
+//      if(word==check){
+//          alert("Palindrome Word")
+//      }else{
+//          alert("Word is not Palindrome word")
+//      }
+// }
+// pal();
+
+// Q # 11
+
+// function toTitleCase(str) {
+//     return str.replace(/\w\S*/g, function(txt){
+//         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+//     });
+// }
+// var string=prompt("Enter String");
+// var g=toTitleCase(string);
+// alert(g);
+
+// Q # 12
+
+// function find_longest_word(str)
+// {
+//   var array1 = str.match(/\w[a-z]{0,}/gi);
+//   var result = array1[0];
+
+//   for(var x = 1 ; x < array1.length ; x++)
+//   {
+//     if(result.length < array1[x].length)
+//     {
+//     result = array1[x];
+//     } 
+//   }
+//   return result;
+// }
+// var e=prompt("Enter String");
+// alert(find_longest_word(e));
+
+// Q # 13
+
+// function char_count(str, letter) 
+// {
+//  var letter_Count = 0;
+//  for (var position = 0; position < str.length; position++) 
+//  {
+//     if (str.charAt(position) == letter) 
+//       {
+//       letter_Count += 1;
+//       }
+//   }
+//   return letter_Count;
+// }
+// var t=prompt("Enter String");
+// var w=prompt("Enter word");;
+// alert(char_count(t,w));
+
 
